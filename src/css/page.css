@@ -1,0 +1,639 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+
+html,body {
+
+  margin:0;
+}
+
+h1 {
+  font-size: 4em;
+  color: silver;
+  letter-spacing: -2px;
+  position:  absolute;
+  padding: 5% 2%;
+  transition: 0.5s ease;
+  
+}
+
+h1:hover{
+  color:white;
+}
+
+
+#lander{
+  position: absolute;
+  top:25%;
+  left:31%;
+}
+h1 a{
+  text-decoration: none;
+
+}
+#highlight{
+  color:silver;
+  position: inherit;
+}
+
+
+nav {
+  width: 100%;
+  height: 10%;
+  position: relative;
+  top: 0;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-container {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-container ul {
+}
+
+.nav-container ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+.nav-container ul li a {
+  padding: 8px 0;
+  color: #ecf0f1;
+  font-size: 1.3em;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+.nav-container ul li a:hover {
+  color: #16a085;
+}
+.active {
+  border-bottom: 2px solid #ecf0f1;
+}
+
+section {
+  width: 100%;
+  padding: none;
+  transition: 0.5s;
+  /*border-bottom: 1px solid #ccc;*/
+  height: 68em;
+  text-align: center;
+}
+section:nth-of-type(1){
+  color:white;
+  text-decoration: none;
+  background-image: linear-gradient(to top right,rgba(13, 52, 58, 1), #000000);
+}
+section:nth-of-type(2){
+  background-image: linear-gradient(to bottom right,rgba(13, 52, 58, 1), #000000);
+}
+#no3 h1{
+  position: absolute;
+  left:80%;
+}
+#no3 p{
+
+  color:white;
+}
+section:nth-of-type(3) {
+  background-image: linear-gradient(to top right,rgba(13, 52, 58, 1), #000000);
+}
+section:nth-of-type(4) {
+  background-image: linear-gradient(to bottom right,rgba(13, 52, 58, 1), #000000);
+}
+section:nth-of-type(5) {
+  background-image: linear-gradient(to top right,rgba(13, 52, 58, 1), #000000);
+  border-bottom: none;
+}
+
+
+
+.col-12 {
+  width: 100%;
+}
+
+footer {
+  height: 500px;
+  width: 100%;
+  padding: 50px;
+  background-color: #bdc3c7;
+  text-align: center;
+}
+footer h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+footer p {
+  color: #ecf0f1;
+}
+footer a:hover {
+  color: #333;
+}
+
+.to-top {
+  padding: 20px;
+  background-color: #bdc3c7;
+  width: 60px;
+  height: 60px;
+  float: right;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 100px;
+  margin-bottom: 25px;
+  opacity: 0;
+  position: absolute;
+
+  transition: all 0.8s ease;
+}
+.to-top:hover {
+  box-shadow: 0 0 10px #333;
+}
+.to-top:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  position: relative;
+  right: 4px;
+  bottom: 2px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+
+  border-bottom: 20px solid #16a085;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.drop {
+  background: -webkit-gradient(linear, 0%, 0%, 0%, 100%, from(rgba(13, 52, 58, 1)),
+  to(rgba(255, 255, 255, 0.6)));
+
+  background:-moz-linear-gradient(top, rgba(13, 52, 58, 1) 0%, rgba(255, 255, 255, 0.6) 100%);
+  width: 1px;
+  height: 89px;
+  position: absolute;
+  bottom :200px;
+  -webkit-animation: fall .63s linear infinite;
+  -moz-animation: fall .63s linear infinite;
+}
+
+@-webkit-keyframes falls {
+  to {margin-top: 900px;}
+}
+
+@-moz-keyframes fall {
+  to {margin-top: 900px;}
+}
+
+canvas {
+  border: 2px solid silver;
+  border-top: inherit;
+  border-right: inherit;
+  border-left:  inherit;
+  position:fixed relative;
+  width: 100%;
+  height: 100%;
+}
+
+#navbar {
+  background-color: transparent;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  display: inline-block;
+  transition: top 0.3s;
+}
+
+
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+#view-work{
+  position: absolute;
+  top:50%;
+  right: 45%;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  padding :2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+  
+}
+
+#view-work a{
+  text-decoration: none;
+  color:silver;
+}
+
+#view-work:hover{
+  transition: 0.5s;
+  background-color: white;
+  color : silver;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#no3 {
+  z-index: -1;
+}
+
+#no2{
+  position: relative;
+}
+#no2.h1{
+  position: absolute;
+}
+.container{
+  position: absolute;
+  height:400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10%;
+  top:30%;
+}
+
+
+.container .box{
+  position: relative;
+  height : 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.content{
+  position: absolute fixed;
+  width:100%;
+  height: 100%;
+  padding: 10px;
+  
+}
+
+.content h1{
+  position: absolute;
+  left:15%;
+  margin:0;
+  padding: 0;
+  font-size:3em;
+  transition: 0.5s ease;
+}
+
+
+
+
+div.polaroid{
+  width: 100%;
+  height: 100%;
+  background:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  color:transparent;
+  transition: 0.5s;
+}
+
+.content:hover div.polaroid{
+  color:gray;
+  opacity: 1;
+  width:105%;
+  height:105%;
+}
+
+.content:hover h1{
+  opacity: 0;
+}
+
+.polaroid img{
+  widows: 100%;
+  height:70%;
+}
+
+#hobby{
+  right: 25%;
+}
+
+#interest{
+  right: 25%;
+}
+
+/* Container for skill bars */
+.container2 {
+  width: 100%; /* Full width */
+}
+
+
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: silver;} /* Green */
+.css {width: 80%; background-color: silver;} /* Blue */
+.Cplusplus {width: 60%; background-color: silver;} /* Red */
+.Java {width: 65%; background-color: silver;} /* Dark Grey */
+.JavaScript {width: 20%; background-color: silver;} /* Dark Grey */
+
+.slideshow{
+  width: 28%;
+  height: 65%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.middle{
+  position: relative;
+  top:23%;
+  left:16%;
+  transform: translate(-50%, -30%);
+}
+.navigation{
+  position: absolute;
+  bottom:20px;
+  left:50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.bar{
+  width:50px;
+  height:10px;
+  border : 2px solid silver;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background:silver;
+}
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height:100%;
+  display: flex;
+}
+
+.slide{
+  width:20%;
+  transition: 0.6s;
+}
+
+.slide img{
+  max-width:100%;
+  height:100%;
+}
+
+.slides #mycaption{
+  position: absolute;
+  left:10%;
+  bottom:9%;
+  font-size: 1.5em;
+  text-decoration: underline;
+  color:black;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0%;
+
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+
+}
+.caption{
+  height:20%;
+  width:20%;
+}
+
+.caption h1{
+  top:60%;
+  color:black;
+  font-size: 1.5em;
+}
+
+
+
+#divstyle{
+  position:relative;
+  left:72%;
+  bottom:38%;
+  max-width: 504px;
+  height:40%;
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#divstyle img{
+  max-width: 100%;
+  height:100%;
+}
+#divstyle div{
+  position: absolute;
+  left:2%;
+  bottom:5%;
+  font-size: 1.5em;
+  text-decoration: underline;
+  color:black;
+}
+#divstyle2{
+  position:relative;
+  left:37%;
+  bottom:77%;
+  max-width: 504px;
+  height:40%;
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#divstyle2 img{
+  max-width: 100%;
+  height:100%;
+}
+#divstyle2 div{
+  position: absolute;
+  left:13%;
+  bottom:7%;
+  font-size: 1.5em;
+  text-decoration: underline;
+  color:white;
+}
+
+
+#myH1Styl{
+  position: relative;
+  bottom:23%;
+  right:50%;
+  font-size: 1.5em;
+  color:black;
+}
+
+.contact-info{
+  display:flex;
+  width:100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+  top:35%;
+
+}
+
+.card{
+  background-color: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  cursor:pointer;
+}
+.card-icon{
+  font-size:28px;
+  background: #ff6348;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+
+
+}
+
+.card:hover .card-icon{
+  background:none;
+  color:#ff6348;
+  transform: scale(1.6);
+}
+
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity:1;
+}
+
+.footer {
+  position: fixed sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:11%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-top: none;
+}
+
+.footer img{
+  position: relative;
+  top:7px;
+  height:30px;
+  max-height:30px;
+}
+
+#highlight2{
+  font-size: 0.6em;
+  color:white;
+}
+
+@media only screen and (max-width: 1119px){
+  #mydesc{
+    display:none;
+  }
+
+  #mycontainer{
+    overflow-y: scroll;
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (max-width: 960px){
+  .container{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #mycontainer{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
+
+#mydesc{
+  transform: translate(0%, 0%);
+  text-overflow: clip;
+  word-wrap: normal;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+  grid-auto-rows: auto;
+  grid-gap: 10%;
+  border-bottom: solid white;
+  background-color: silver;
+}
+
+#mycontainer{
+  width:46%;
+  height: 708px;
+  transform: translate(75%, -94%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+  grid-auto-rows: auto;
+  grid-gap: 10%;
+}
+
+#mycontainer img{
+  width: 100%;
+  height: 60%;
+} 
