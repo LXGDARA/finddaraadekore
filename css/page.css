@@ -637,7 +637,17 @@ input[name="r"]{
     overflow-y: hidden;
     overflow-x: hidden;
   }
+
+  .contact-info{
+    overflow: hidden;
+  }
+
+  #mygit{
+    height:fit-content;
+  }
 }
+
+
 
 @media only screen and (max-width:768px){
   #no3 h1{
