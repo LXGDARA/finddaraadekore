@@ -655,6 +655,16 @@ input[name="r"]{
   }
 }
 
+@media only screen and (max-width:665px){
+  #lander{
+    transform: translateY(-40%);
+  }
+
+  #view-work{
+    transform: translateX(30%);
+  }
+}
+
 #mydesc{
   transform: translate(0%, 0%);
   text-overflow: clip;
