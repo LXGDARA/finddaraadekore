@@ -108,7 +108,8 @@ section:nth-of-type(2){
 }
 #no3 h1{
   position: absolute;
-  left:80%;
+  transform: translate(0%, 25%);
+  right: 0%;
 }
 #no3 p{
 
@@ -509,13 +510,12 @@ input[name="r"]{
 .contact-info{
   display:flex;
   width:100%;
-  max-width: 1200px;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
   position: relative;
   top:35%;
-
+  overflow-x: hidden;
 }
 
 .card{
@@ -565,6 +565,28 @@ input[name="r"]{
   opacity:1;
 }
 
+#mygit{
+  height:80%;
+  width:100%;
+  margin-left: 10px;
+  transform: translateY(2px);
+  background:white;
+  z-index: 2;
+}
+
+#backtext{
+  color:white;
+  background-color: white;
+  z-index: 1;
+}
+
+#backtext:hover{
+  color:black;
+  transition: 0.5s;
+}
+
+
+
 .footer {
   position: fixed sticky;
   left: 0;
@@ -589,6 +611,12 @@ input[name="r"]{
   color:white;
 }
 
+@media only screen and (max-width:1230px){
+  #no3 h1{
+    transform: translate(0%, 60%);
+  }
+}
+
 @media only screen and (max-width: 1119px){
   #mydesc{
     display:none;
@@ -608,6 +636,12 @@ input[name="r"]{
   #mycontainer{
     overflow-y: hidden;
     overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width:768px){
+  #no3 h1{
+    display: none;
   }
 }
 
