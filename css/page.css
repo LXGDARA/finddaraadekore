@@ -522,7 +522,6 @@ input[name="r"]{
   background-color: #2f3542;
   padding: 0 20px;
   margin: 0 10px;
-  width: calc(33% - 20px);
   height: 200px;
   display:flex;
   justify-content: center;
@@ -577,6 +576,7 @@ input[name="r"]{
 #backtext{
   color:white;
   background-color: white;
+
   z-index: 1;
 }
 
